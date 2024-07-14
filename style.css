@@ -2,6 +2,11 @@ body {
   font-family: Manrope;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 li {
   list-style: none;
 }
@@ -12,10 +17,6 @@ li {
   margin: 0px auto;
   box-sizing: content-box;
 }
-.container .header__container {
-  font-size: 90px;
-}
-
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -23,6 +24,38 @@ li {
 
 body {
   font-family: Manrope;
-  font-size: 18px;
   background-color: white;
+}
+
+.header__container {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu__list {
+  background-color: #91a7f5;
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.header__menu__item {
+  margin-left: 55px;
+  margin-right: 55px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.header__button {
+  color: #ffffff;
+  border-radius: 14px;
+  padding: 5px;
+  padding: 7px 15px;
+  border: none;
+  background-color: black;
+  flex-shrink: 0;
 }
