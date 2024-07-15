@@ -93,4 +93,39 @@ document.addEventListener("DOMContentLoaded", function () {
     opacity: 1,
     ease: "power3.out",
   });
+  // Анимация появления текста при скролле
+  gsap.to(".text__block__subtext", {
+    scrollTrigger: {
+      trigger: ".text__block",
+      start: "top 90%", // начало анимации при достижении 80% от верха экрана
+    },
+    duration: 1,
+    y: 0,
+    opacity: 1,
+    ease: "power3.out",
+  });
+  // Хаотичное движение квадратиков
+  const squares = document.querySelectorAll(".text__block__square");
+
+  squares.forEach((square) => {
+    gsap.to(square, {
+      x: "random(0, 560)", // 660px (ширина контейнера) - 100px (ширина квадрата)
+      y: "random(0, 257)", // 357px (высота контейнера) - 100px (высота квадрата)
+      duration: "random(2, 5)",
+      ease: "none",
+      repeat: -1,
+      yoyo: true,
+    });
+  });
+
+  // Остановка движения при наведении на голубой блок
+  const dynamicBlock = document.querySelector(".text__block__dynamic_block");
+
+  dynamicBlock.addEventListener("mouseenter", () => {
+    gsap.globalTimeline.pause();
+  });
+
+  dynamicBlock.addEventListener("mouseleave", () => {
+    gsap.globalTimeline.resume();
+  });
 });
