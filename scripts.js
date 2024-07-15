@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gsap.to(details[index], {
       scrollTrigger: {
         trigger: item,
-        start: "top 75%", // начало анимации при достижении 75% от верха экрана
+        start: "top 90%", // начало анимации при достижении 75% от верха экрана
         toggleActions: "play none none none",
       },
       opacity: 1,

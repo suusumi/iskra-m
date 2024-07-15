@@ -265,7 +265,7 @@ body {
   transform: translateY(-40%);
 }
 .text__block__dynamic_block {
-  width: 660px;
+  max-width: 660px;
   height: 357px;
   background: #c9d5ff;
   border: none;
@@ -277,6 +277,21 @@ body {
 @media (max-width: 900px) {
   .text__block {
     margin-top: 150px;
+  }
+  .text__block__heading {
+    font-size: 28px;
+    text-align: center;
+  }
+  .text__block__subtext {
+    padding-top: 10px;
+    text-align: center;
+    margin: 0;
+    font-size: 28px;
+  }
+}
+@media (max-width: 540px) {
+  .text__block {
+    margin-top: 80px;
   }
 }
 .text__block__square {
@@ -318,6 +333,7 @@ body {
   font-weight: bold;
   color: #a6a6a8;
   margin-top: 90px;
+  min-height: 270px;
 }
 .second__block__detail {
   font-size: 32px;
@@ -326,6 +342,7 @@ body {
   font-weight: bold;
   opacity: 0;
   position: relative;
+  min-height: 270px;
 }
 .second__block__first_column, .second__block__second_column {
   flex: 1;
