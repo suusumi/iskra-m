@@ -84,4 +84,13 @@ document.addEventListener("DOMContentLoaded", function () {
     opacity: 1,
     ease: "power3.out",
   });
+
+  //   Анимация появления subtext первый блок
+  gsap.to(".box__subtext", {
+    duration: 1.6,
+    delay: 0.5,
+    y: 0,
+    opacity: 1,
+    ease: "power3.out",
+  });
 });

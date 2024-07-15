@@ -192,6 +192,8 @@ body {
 .box__subtext {
   max-width: 560px;
   font-family: manrope;
+  opacity: 0;
+  transform: translateY(-40%);
 }
 .box__text {
   font-family: unbounded;
@@ -218,7 +220,7 @@ body {
   .box__heading {
     font-size: 35px;
     min-height: 140px;
-    min-width: 370px;
+    min-width: 360px;
     text-align: center;
   }
   .box__subtext {
