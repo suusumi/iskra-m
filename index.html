@@ -10,9 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <script src="/gsap/gsap.min.js"></script>
-    <script src="/gsap/ScrollTrigger.min.js"></script>
-    <script src="/scripts.js"></script>
+    <script src="/gsap/gsap.min.js" defer></script>
+    <script src="/gsap/ScrollTrigger.min.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"
+      defer
+    ></script>
+    <script src="/scripts.js" defer></script>
     <title>Искра-М</title>
   </head>
   <body>
@@ -33,7 +37,14 @@
               <li class="header__menu__item">Сертификаты</li>
             </ul>
           </nav>
-          <button class="header__button">Связаться с нами</button>
+          <button class="header__button">
+            Связаться с нами
+            <img
+              src="/img/svg/arrow.svg"
+              alt="arrow"
+              class="header__button_arrow"
+            />
+          </button>
         </div>
 
         <!-- Hamburger -->
@@ -59,7 +70,22 @@
         </div>
       </div>
       <div class="container">
-        <p>spdfo</p>
+        <div class="box">
+          <div class="box__text">
+            <p class="box__heading" id="typing-text">
+              Обслуживаем медицинскую технику
+            </p>
+            <p class="box__subtext">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque amet ligula
+              consectetur sed pharetra. Quam volutpat gravida sem ac
+              pellentesque tristique vulputate elit.
+            </p>
+          </div>
+          <div class="box__text">
+            <img src="/img/logo/iskra-big-logo.svg" alt="" class="box__img" />
+          </div>
+        </div>
+        <div class="background"></div>
       </div>
     </div>
   </body>
