@@ -27,6 +27,14 @@ body {
   background-color: white;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+  background-color: white;
+  padding: 5px 0px;
+}
 .header__container {
   font-size: 14px;
   display: flex;
