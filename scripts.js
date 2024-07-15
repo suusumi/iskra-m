@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Регистрация плагина
-  gsap.registerPlugin(TextPlugin);
+  gsap.registerPlugin(TextPlugin, ScrollTrigger);
 
   // Анимация элементов шапки
   gsap.to(".header__menu__list", {
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gsap.to(square, {
       x: "random(0, 560)", // 660px (ширина контейнера) - 100px (ширина квадрата)
       y: "random(0, 257)", // 357px (высота контейнера) - 100px (высота квадрата)
-      duration: "random(2, 5)",
+      duration: "random(2, 3)",
       ease: "none",
       repeat: -1,
       yoyo: true,
@@ -127,5 +127,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
   dynamicBlock.addEventListener("mouseleave", () => {
     gsap.globalTimeline.resume();
+  });
+
+  gsap.to(".text__block__subtext", {
+    scrollTrigger: {
+      trigger: ".text__block",
+      start: "top 90%", // начало анимации при достижении 80% от верха экрана
+    },
+    duration: 1,
+    y: 0,
+    opacity: 1,
+    ease: "power3.out",
+  });
+
+  // Анимация появления строк в правом столбце второго блока
+  const items = document.querySelectorAll(".second__block__item");
+  const details = document.querySelectorAll(".second__block__detail");
+
+  items.forEach((item, index) => {
+    gsap.to(item, {
+      scrollTrigger: {
+        trigger: item,
+        start: "top 75%", // начало анимации при достижении 75% от верха экрана
+        toggleActions: "play none none none",
+      },
+      color: "#000",
+      duration: 1,
+      ease: "power3.out",
+      delay: index * 0.3, // задержка для последовательного появления
+    });
+    gsap.to(details[index], {
+      scrollTrigger: {
+        trigger: item,
+        start: "top 75%", // начало анимации при достижении 75% от верха экрана
+        toggleActions: "play none none none",
+      },
+      opacity: 1,
+      duration: 1,
+      ease: "power3.out",
+      delay: index * 0.3, // задержка для последовательного появления
+    });
   });
 });
