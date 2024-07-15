@@ -30,6 +30,7 @@ body {
 .header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   z-index: 1001;
   background-color: white;
@@ -83,6 +84,14 @@ body {
 .header__logo {
   transform: translateY(-130%);
   opacity: 0;
+}
+@media (max-width: 900px) {
+  .header {
+    width: 99%;
+  }
+  .header__img_logo {
+    margin: 0px 10px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -334,25 +343,43 @@ body {
 
 .second__block {
   display: flex;
+  flex-direction: column;
   margin-top: 50px;
+}
+.second__block__row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
 .second__block__item {
   font-size: 32px;
   font-weight: bold;
   color: #a6a6a8;
-  margin-top: 90px;
-  min-height: 270px;
+  margin-top: 20px;
 }
 .second__block__detail {
   font-size: 32px;
-  margin-top: 90px;
   color: #a6a6a8;
   font-weight: bold;
   opacity: 0;
-  position: relative;
-  min-height: 270px;
+  margin-top: 10px;
 }
-.second__block__first_column, .second__block__second_column {
-  flex: 1;
-  padding: 0 20px;
+@media (min-width: 900px) {
+  .second__block {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .second__block__row {
+    padding: 10px;
+    flex-direction: row;
+  }
+  .second__block__detail {
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 20px;
+  }
+  .second__block__item {
+    margin-top: 20px;
+    width: 70%;
+  }
 }
