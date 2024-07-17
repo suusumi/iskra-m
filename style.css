@@ -61,6 +61,10 @@ body {
   flex-shrink: 0;
   cursor: pointer;
 }
+.header__menu__item a {
+  text-decoration: none !important;
+  color: #ffffff !important;
+}
 .header__button {
   color: #ffffff;
   border-radius: 14px;
@@ -121,7 +125,9 @@ body {
   position: relative;
   z-index: 1001;
 }
-.hamburger-menu .menu__btn > span, .hamburger-menu .menu__btn > span::before, .hamburger-menu .menu__btn > span::after {
+.hamburger-menu .menu__btn > span,
+.hamburger-menu .menu__btn > span::before,
+.hamburger-menu .menu__btn > span::after {
   display: block;
   position: absolute;
   width: 25px;
@@ -381,5 +387,29 @@ body {
   .second__block__item {
     margin-top: 20px;
     width: 70%;
+  }
+}
+
+.projects__block {
+  margin-top: 100px;
+}
+.projects__block__heading {
+  font-size: 40px;
+  color: #000000;
+  font-weight: 600;
+  margin: 0;
+}
+.projects__block__subtext {
+  font-size: 40px;
+  color: #a6a6a8;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 10px;
+  opacity: 0;
+  transform: translateY(-40%);
+}
+@media (max-width: 900px) {
+  .projects__block {
+    margin-top: 0px;
   }
 }
