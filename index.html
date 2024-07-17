@@ -10,8 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <script src="/gsap/gsap.min.js" defer></script>
-    <script src="/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="gsap/gsap.min.js" defer></script>
+    <script src="gsap/ScrollTrigger.min.js" defer></script>
+    <script src="gsap/ScrollToPlugin.min.js" defer></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"
       defer
@@ -32,11 +33,14 @@
           </a>
           <nav class="header__menu">
             <ul class="header__menu__list">
-              <li class="header__menu__item">О нас</li>
-              <li class="header__menu__item">Услуги</li>
-              <li class="header__menu__item">Сертификаты</li>
+              <li class="header__menu__item"><a href="#About">О нас</a></li>
+              <li class="header__menu__item"><a href="#Services">Услуги</a></li>
+              <li class="header__menu__item">
+                <a href="#Certificates">Сертификаты</a>
+              </li>
             </ul>
           </nav>
+
           <button class="header__button">
             Связаться с нами
             <img
@@ -85,7 +89,7 @@
           </div>
         </div>
         <div class="text__block">
-          <p class="text__block__heading">Кто мы</p>
+          <p class="text__block__heading" id="About">Кто мы</p>
           <p class="text__block__subtext">
             Динамично развивающаяся компания, успешно работаем в сфере
             технического обслуживания и ремонта медицинской техники с 2013 года.
@@ -97,7 +101,7 @@
             <div class="text__block__square" id="square4">Исследования</div>
           </div>
         </div>
-        <div class="second__block">
+        <div class="second__block" id="Services">
           <div class="second__block__row">
             <p id="item1" class="second__block__item">
               Техническое обслуживание и ремонт изделий медицинской техники
@@ -149,6 +153,30 @@
               Cпециализируемся на разработке и эксплуатации баз данных и
               информационных ресурсов.
             </p>
+          </div>
+        </div>
+        <div class="projects__block">
+          <p class="projects__block__heading">
+            Лучшие решения для наших клиентов.
+          </p>
+          <p class="projects__block__subtext">
+            Разработали множество проектов.
+          </p>
+          <div class="project__block__img_container">
+            <div class="project__block__img_1">
+              <img
+                src="/img/logo/volggmu.svg"
+                alt="Volggmu Logo"
+                class="project__block__img_1_logo"
+              />
+            </div>
+            <div class="project__block__img_2">
+              <img
+                src="/img/logo/technic.png"
+                alt="Техника"
+                class="project__block__img_2_technic"
+              />
+            </div>
           </div>
         </div>
         <div class="background"></div>
