@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: Manrope;
 }
@@ -62,8 +63,8 @@ body {
   cursor: pointer;
 }
 .header__menu__item a {
-  text-decoration: none !important;
-  color: #ffffff !important;
+  text-decoration: none;
+  color: #ffffff;
 }
 .header__button {
   color: #ffffff;
@@ -125,9 +126,7 @@ body {
   position: relative;
   z-index: 1001;
 }
-.hamburger-menu .menu__btn > span,
-.hamburger-menu .menu__btn > span::before,
-.hamburger-menu .menu__btn > span::after {
+.hamburger-menu .menu__btn > span, .hamburger-menu .menu__btn > span::before, .hamburger-menu .menu__btn > span::after {
   display: block;
   position: absolute;
   width: 25px;
@@ -220,7 +219,7 @@ body {
   transform: translateY(-40%);
 }
 .box__text {
-  font-family: unbounded;
+  font-family: "Unbounded";
 }
 .box__heading {
   max-width: 560px;
@@ -411,5 +410,48 @@ body {
 @media (max-width: 900px) {
   .projects__block {
     margin-top: 0px;
+  }
+}
+.projects__block__img_container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+.projects__block__img_1 {
+  width: 30%;
+  margin-right: 20px;
+  height: 460px;
+  background-color: #f3f3f5;
+  display: flex;
+  border-radius: 15px;
+  justify-content: center; /* Добавлено */
+  align-items: center;
+}
+.projects__block__img_1_logo {
+  width: 80%;
+}
+.projects__block__img_2 {
+  width: 70%;
+  display: flex;
+  height: 460px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.projects__block__img_2_technic {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* Добавлено для сохранения пропорций изображения */
+}
+@media (max-width: 900px) {
+  .projects__block__img_container {
+    flex-direction: column;
+  }
+  .projects__block__img_1 {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .projects__block__img_2 {
+    width: 100%;
+    margin-top: 20px;
   }
 }
