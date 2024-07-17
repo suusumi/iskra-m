@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Регистрация плагина
-  gsap.registerPlugin(TextPlugin, ScrollTrigger);
+  gsap.registerPlugin(TextPlugin, ScrollTrigger, ScrollToPlugin);
 
   // Анимация элементов шапки
   gsap.to(".header__menu__list", {
@@ -97,13 +97,14 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.to(".text__block__subtext", {
     scrollTrigger: {
       trigger: ".text__block",
-      start: "top 90%", // начало анимации при достижении 80% от верха экрана
+      start: "top 80%", // начало анимации при достижении 80% от верха экрана
     },
     duration: 1,
     y: 0,
     opacity: 1,
     ease: "power3.out",
   });
+
   // Хаотичное движение квадратиков
   const squares = document.querySelectorAll(".text__block__square");
 
@@ -119,15 +120,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Остановка движения при наведении на голубой блок
-  const dynamicBlock = document.querySelector(".text__block__dynamic_block");
+  //   const dynamicBlock = document.querySelector(".text__block__dynamic_block");
 
-  dynamicBlock.addEventListener("mouseenter", () => {
-    gsap.globalTimeline.pause();
-  });
+  //   dynamicBlock.addEventListener("mouseenter", () => {
+  //     gsap.globalTimeline.pause();
+  //   });
 
-  dynamicBlock.addEventListener("mouseleave", () => {
-    gsap.globalTimeline.resume();
-  });
+  //   dynamicBlock.addEventListener("mouseleave", () => {
+  //     gsap.globalTimeline.resume();
+  //   });
 
   gsap.to(".text__block__subtext", {
     scrollTrigger: {
@@ -169,3 +170,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+// Плавный скроллинг при клике на пункты меню
+document
+  .querySelectorAll(".header__menu__item a, .menu__item2")
+  .forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href").substring(1);
+      gsap.to(window, {
+        duration: 1.5,
+        scrollTo: { y: `#${targetId}`, offsetY: 50 },
+        ease: "power3.inOut",
+      });
+    });
+
+    // Анимация subtext project block
+    gsap.to(".projects__block__subtext", {
+      scrollTrigger: {
+        trigger: ".projects__block",
+        start: "top 75%", // начало анимации при достижении 80% от верха экрана
+      },
+      duration: 1,
+      y: 0,
+      opacity: 1,
+      ease: "power3.out",
+    });
+  });
