@@ -406,15 +406,17 @@ body {
 
 .projects__block {
   margin-top: 100px;
+
   &__heading {
     font-size: 40px;
-    color: $text-primary-color;
+    color: #000000;
     font-weight: 600;
     margin: 0;
   }
+
   &__subtext {
     font-size: 40px;
-    color: $text-secondary-color;
+    color: #a6a6a8;
     font-weight: 600;
     margin: 0;
     margin-top: 10px;
@@ -430,49 +432,67 @@ body {
     margin-top: 40px;
     display: flex;
     flex-direction: row;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
   }
 
   &__img_1 {
+    display: flex;
+    flex-direction: column;
     width: 30%;
     margin-right: 20px;
     height: 460px;
     background-color: #f3f3f5;
-    display: flex;
-
     border-radius: 15px;
-    justify-content: center; /* Добавлено */
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 20px; /* Добавлено для отступа сверху */
+    box-sizing: border-box;
+
+    @media (max-width: 900px) {
+      width: 100%;
+      margin-right: 0px;
+      margin-bottom: 20px; /* Добавлено для отступа снизу */
+    }
 
     &_logo {
       width: 80%;
+      margin-top: 100px;
     }
   }
 
   &__img_2 {
-    width: 70%;
     display: flex;
+    flex-direction: column;
+    width: 70%;
     height: 460px;
+    background-color: #f3f3f5;
     border-radius: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
     overflow: hidden;
+
+    @media (max-width: 900px) {
+      width: 100%;
+      margin-top: 20px;
+    }
 
     &_technic {
       width: 100%;
-      object-fit: cover; /* Добавлено для сохранения пропорций изображения */
-    }
-  }
-
-  @media (max-width: 900px) {
-    &__img_container {
-      flex-direction: column;
-    }
-
-    &__img_1 {
-      width: 100%;
-      margin-right: 0px;
-    }
-    &__img_2 {
-      width: 100%;
-      margin-top: 20px;
+      height: auto;
+      margin-top: auto;
+      object-fit: cover;
     }
   }
 }
