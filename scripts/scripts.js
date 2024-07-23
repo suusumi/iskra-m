@@ -184,6 +184,18 @@ document
       });
     });
 
+    // Плавный скроллинг при клике на кнопку "Связаться с нами"
+    document
+      .querySelector(".header__button")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.closest("a").getAttribute("href").substring(1);
+        gsap.to(window, {
+          duration: 1.5,
+          scrollTo: { y: `#${targetId}`, offsetY: 50 },
+          ease: "power3.inOut",
+        });
+      });
     // Анимация subtext project block
     gsap.to(".projects__block__subtext", {
       scrollTrigger: {
