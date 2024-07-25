@@ -382,6 +382,15 @@ body {
     font-weight: bold;
     opacity: 0;
     margin-top: 10px;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: #b6c6ff;
+    }
+
+    &:not(:hover) {
+      color: $text-secondary-color;
+    }
   }
 
   @media (min-width: 900px) {
@@ -539,6 +548,16 @@ body {
     background-color: #f3f3f5;
     border-radius: 15px;
     padding: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #b6c6ff;
+      transition: 0.3s ease-in-out;
+    }
+    &:not(:hover) {
+      background-color: #f3f3f5;
+      transition: 0.3s ease-in-out;
+    }
   }
 
   &__img_2 {
