@@ -589,6 +589,15 @@ body {
     width: 500px;
   }
 }
+.certificates__block {
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+@media (max-width: 900px) {
+  .certificates__block {
+    margin-top: 60px;
+  }
+}
 .certificates__block__img_container {
   display: flex;
   justify-content: space-between;
