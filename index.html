@@ -30,238 +30,318 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="header">
-        <div class="container header__container">
-          <a href="" class="header__logo">
-            <img
-              src="img/logo/iskra-m.svg"
-              alt="iskra-m logo"
-              class="header__img_logo"
-            />
-          </a>
-          <nav class="header__menu">
-            <ul class="header__menu__list">
-              <li class="header__menu__item"><a href="#About">О нас</a></li>
-              <li class="header__menu__item"><a href="#Services">Услуги</a></li>
-              <li class="header__menu__item">
-                <a href="#Certificates">Сертификаты</a>
+      <main>
+        <div class="header">
+          <div class="container header__container">
+            <a href="" class="header__logo">
+              <img
+                src="img/logo/iskra-m.svg"
+                alt="iskra-m logo"
+                class="header__img_logo"
+              />
+            </a>
+            <nav class="header__menu">
+              <ul class="header__menu__list">
+                <li class="header__menu__item"><a href="#About">О нас</a></li>
+                <li class="header__menu__item">
+                  <a href="#Services">Услуги</a>
+                </li>
+                <li class="header__menu__item">
+                  <a href="#Certificates">Документы</a>
+                </li>
+              </ul>
+            </nav>
+
+            <a href="#Contacts" style="text-decoration: none">
+              <button class="header__button">
+                Связаться с нами
+                <img
+                  src="img/svg/arrow.svg"
+                  alt="arrow"
+                  class="header__button_arrow"
+                />
+              </button>
+            </a>
+          </div>
+
+          <!-- Hamburger -->
+          <div class="hamburger-menu">
+            <a href="" class="header__logo">
+              <img
+                src="img/logo/iskra-m.svg"
+                alt="iskra-m logo"
+                class="header__img_logo"
+              />
+            </a>
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li><a class="menu__item2" href="#About">О нас</a></li>
+              <li>
+                <a class="menu__item2" href="#Services">Услуги</a>
+              </li>
+              <li>
+                <a class="menu__item2" href="#Certificates">Сертификаты</a>
               </li>
             </ul>
-          </nav>
-
-          <a href="#Contacts" style="text-decoration: none">
-            <button class="header__button">
-              Связаться с нами
-              <img
-                src="img/svg/arrow.svg"
-                alt="arrow"
-                class="header__button_arrow"
-              />
-            </button>
-          </a>
-        </div>
-
-        <!-- Hamburger -->
-        <div class="hamburger-menu">
-          <a href="" class="header__logo">
-            <img
-              src="img/logo/iskra-m.svg"
-              alt="iskra-m logo"
-              class="header__img_logo"
-            />
-          </a>
-          <input id="menu__toggle" type="checkbox" />
-          <label class="menu__btn" for="menu__toggle">
-            <span></span>
-          </label>
-          <ul class="menu__box">
-            <li><a class="menu__item2" href="#About">О нас</a></li>
-            <li>
-              <a class="menu__item2" href="#Services">Услуги</a>
-            </li>
-            <li><a class="menu__item2" href="#Certificates">Сертификаты</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="container">
-        <div class="box">
-          <div class="box__text">
-            <p class="box__heading" id="typing-text">
-              Обслуживаем медицинскую технику
-            </p>
-            <p class="box__subtext">
-              Ваш надежный партнер в области медицинской техники и
-              информационных технологий!
-            </p>
-          </div>
-          <div class="box__text">
-            <img src="img/logo/iskra-big-logo.svg" alt="" class="box__img" />
           </div>
         </div>
-        <div class="text__block">
-          <p class="text__block__heading" id="About">Кто мы</p>
-          <p class="text__block__subtext">
-            Динамично развивающаяся компания, успешно работаем в сфере
-            технического обслуживания и ремонта медицинской техники с 2013 года.
-          </p>
-          <div class="text__block__dynamic_block">
-            <div class="text__block__square" id="square1">Обслуживание</div>
-            <div class="text__block__square" id="square2">Разработка</div>
-            <div class="text__block__square" id="square3">Ремонт</div>
-            <div class="text__block__square" id="square4">Исследования</div>
-          </div>
-        </div>
-        <div class="second__block" id="Services">
-          <div class="second__block__row">
-            <p id="item1" class="second__block__item">
-              Техническое обслуживание и ремонт изделий медицинской техники
-            </p>
-            <p id="detail1" class="second__block__detail">
-              Мы обладаем лицензией № Л016-00110-77/00271667 от 20.05.2022 г.
-            </p>
-          </div>
-          <div class="second__block__row">
-            <p id="item2" class="second__block__item">
-              Разработка компьютерного программного обеспечения
-            </p>
-            <p id="detail2" class="second__block__detail">
-              Создаем высококачественные программные продукты, предоставляем
-              консультационные услуги и сопутствующие услуги в области IT
-            </p>
-          </div>
-          <div class="second__block__row">
-            <p id="item3" class="second__block__item">
-              Ремонт электронного и оптического оборудования
-            </p>
-            <p id="detail3" class="second__block__detail">
-              Обеспечиваем качественный ремонт различных видов оборудования
-            </p>
-          </div>
-          <div class="second__block__row">
-            <p id="item4" class="second__block__item">
-              Научные исследования и разработки
-            </p>
-            <p id="detail4" class="second__block__detail">
-              Проводим научные исследования и разработки в области естественных
-              и технических наук.
-            </p>
-          </div>
-          <div class="second__block__row">
-            <p id="item5" class="second__block__item">
-              Обработка данных и информационные услуги
-            </p>
-            <p id="detail5" class="second__block__detail">
-              Предлагаем услуги по обработке данных, размещению информации и
-              поддержке информационных порталов в сети Интернет.
-            </p>
-          </div>
-          <div class="second__block__row">
-            <p id="item6" class="second__block__item">
-              Создание и использование баз данных
-            </p>
-            <p id="detail6" class="second__block__detail">
-              Cпециализируемся на разработке и эксплуатации баз данных и
-              информационных ресурсов.
-            </p>
-          </div>
-        </div>
-        <div class="projects__block">
-          <h1 class="projects__block__heading">
-            Лучшие решения для наших клиентов.
-          </h1>
-          <h2 class="projects__block__subtext">
-            Разработали множество проектов.
-          </h2>
-          <div class="projects__block__img_container">
-            <div class="projects__block__img_1">
-              <p>Виртуальная клиника для ВолгГМУ</p>
-              <img
-                src="img/logo/volggmu.svg"
-                alt="Volggmu Logo"
-                class="projects__block__img_1_logo"
-              />
-            </div>
-            <div class="projects__block__img_2">
-              <p class="projects__block__img_2_text">
-                Техническое обслуживание изделий медицинской техники ведущих
-                клиник г. Волгограда
+        <div class="container">
+          <div class="box">
+            <div class="box__text">
+              <p class="box__heading" id="typing-text">
+                Обслуживаем медицинскую технику
               </p>
-              <img
-                src="img/logo/technic.png"
-                alt="Техника"
-                class="projects__block__img_2_technic"
-              />
+              <p class="box__subtext">
+                Ваш надежный партнер в области медицинской техники и
+                информационных технологий!
+              </p>
+            </div>
+            <div class="box__text">
+              <img src="img/logo/iskra-big-logo.svg" alt="" class="box__img" />
             </div>
           </div>
-        </div>
-        <div class="contacts__block" style="margin-top: 140px">
-          <h1 class="projects__block__heading" id="Contacts">Связь с нами.</h1>
-          <h2 class="projects__block__subtext">
-            Готовы ответить на все ваши вопросы.
-          </h2>
-          <div class="projects__block__img_container">
-            <a
-              href="tel:+79033761021"
-              style="text-decoration: none; color: black"
-              class="contacts__block__img_1"
-            >
-              <div>
-                <p style="text-align: center; margin: 0px 0px 20px 0px">
-                  Позвонить
-                </p>
-                <p style="margin: 0px 0px 0px 0px">+7 903 376 10 21</p>
-              </div>
-            </a>
-            <a
-              href="mailto:iskram34@mail.ru"
-              style="text-decoration: none; color: black"
-              class="contacts__block__img_1"
-            >
-              <div>
-                <p style="text-align: center; margin: 0px 0px 20px 0px">
-                  Написать на почту
-                </p>
-                <p style="text-align: center; margin: 0px 0px 0px 0px">
-                  iskram34@mail.ru
-                </p>
-              </div>
-            </a>
+          <div class="text__block">
+            <p class="text__block__heading" id="About">Кто мы</p>
+            <p class="text__block__subtext">
+              Динамично развивающаяся компания, успешно работаем в сфере
+              технического обслуживания и ремонта медицинской техники с 2013
+              года.
+            </p>
+            <div class="text__block__dynamic_block">
+              <div class="text__block__square" id="square1">Обслуживание</div>
+              <div class="text__block__square" id="square2">Разработка</div>
+              <div class="text__block__square" id="square3">Ремонт</div>
+              <div class="text__block__square" id="square4">Исследования</div>
+            </div>
           </div>
-          <div class="contacts__block__map">
-            <div
-              style="position: relative; overflow: hidden; border-radius: 15px"
-            >
+          <div class="second__block" id="Services">
+            <div class="second__block__row">
+              <p id="item1" class="second__block__item">
+                Техническое обслуживание и ремонт изделий медицинской техники
+              </p>
+              <p id="detail1" class="second__block__detail">
+                Мы обладаем лицензией № Л016-00110-77/00271667 от 20.05.2022 г.
+              </p>
+            </div>
+            <div class="second__block__row">
+              <p id="item2" class="second__block__item">
+                Разработка компьютерного программного обеспечения
+              </p>
+              <p id="detail2" class="second__block__detail">
+                Создаем высококачественные программные продукты, предоставляем
+                консультационные услуги и сопутствующие услуги в области IT
+              </p>
+            </div>
+            <div class="second__block__row">
+              <p id="item3" class="second__block__item">
+                Ремонт электронного и оптического оборудования
+              </p>
+              <p id="detail3" class="second__block__detail">
+                Обеспечиваем качественный ремонт различных видов оборудования
+              </p>
+            </div>
+            <div class="second__block__row">
+              <p id="item4" class="second__block__item">
+                Научные исследования и разработки
+              </p>
+              <p id="detail4" class="second__block__detail">
+                Проводим научные исследования и разработки в области
+                естественных и технических наук.
+              </p>
+            </div>
+            <div class="second__block__row">
+              <p id="item5" class="second__block__item">
+                Обработка данных и информационные услуги
+              </p>
+              <p id="detail5" class="second__block__detail">
+                Предлагаем услуги по обработке данных, размещению информации и
+                поддержке информационных порталов в сети Интернет.
+              </p>
+            </div>
+            <div class="second__block__row">
+              <p id="item6" class="second__block__item">
+                Создание и использование баз данных
+              </p>
+              <p id="detail6" class="second__block__detail">
+                Cпециализируемся на разработке и эксплуатации баз данных и
+                информационных ресурсов.
+              </p>
+            </div>
+          </div>
+          <div class="projects__block">
+            <h1 class="projects__block__heading">
+              Лучшие решения для наших клиентов.
+            </h1>
+            <h2 class="projects__block__subtext">
+              Разработали множество проектов.
+            </h2>
+            <div class="projects__block__img_container">
+              <div class="projects__block__img_1">
+                <p>Виртуальная клиника для ВолгГМУ</p>
+                <img
+                  src="img/logo/volggmu.svg"
+                  alt="Volggmu Logo"
+                  class="projects__block__img_1_logo"
+                />
+              </div>
+              <div class="projects__block__img_2">
+                <p class="projects__block__img_2_text">
+                  Техническое обслуживание изделий медицинской техники ведущих
+                  клиник г. Волгограда
+                </p>
+                <img
+                  src="img/logo/technic.png"
+                  alt="Техника"
+                  class="projects__block__img_2_technic"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="contacts__block" style="margin-top: 140px">
+            <h1 class="projects__block__heading" id="Contacts">
+              Связь с нами.
+            </h1>
+            <h2 class="projects__block__subtext">
+              Готовы ответить на все ваши вопросы.
+            </h2>
+            <div class="projects__block__img_container">
               <a
-                href="https://yandex.ru/maps/38/volgograd/?utm_medium=mapframe&utm_source=maps"
+                href="tel:+79033761021"
+                style="text-decoration: none; color: black"
+                class="contacts__block__img_1"
+              >
+                <div>
+                  <p style="text-align: center; margin: 0px 0px 20px 0px">
+                    Позвонить
+                  </p>
+                  <p style="margin: 0px 0px 0px 0px">+7 903 376 10 21</p>
+                </div>
+              </a>
+              <a
+                href="mailto:iskram34@mail.ru"
+                style="text-decoration: none; color: black"
+                class="contacts__block__img_1"
+              >
+                <div>
+                  <p style="text-align: center; margin: 0px 0px 20px 0px">
+                    Написать на почту
+                  </p>
+                  <p style="text-align: center; margin: 0px 0px 0px 0px">
+                    iskram34@mail.ru
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="contacts__block__map">
+              <div
                 style="
-                  color: #eee;
-                  font-size: 12px;
-                  position: absolute;
-                  top: 0px;
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 15px;
                 "
-                >Волгоград</a
-              ><a
-                href="https://yandex.ru/maps/38/volgograd/house/pugachyovskaya_ulitsa_3/YE0YcwdoTUIAQFpifXp4d3VhZw==/?ll=44.508618%2C48.696803&utm_medium=mapframe&utm_source=maps&z=20.27"
-                style="
-                  color: #eee;
-                  font-size: 12px;
-                  position: absolute;
-                  top: 14px;
-                "
-                >Пугачёвская улица, 3 — Яндекс Карты</a
-              ><iframe
-                src="https://yandex.ru/map-widget/v1/?ll=44.508618%2C48.696803&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzgyOTA5NxJG0KDQvtGB0YHQuNGPLCDQktC-0LvQs9C-0LPRgNCw0LQsINCf0YPQs9Cw0YfRkdCy0YHQutCw0Y8g0YPQu9C40YbQsCwgMyIKDa4IMkIVpslCQg%2C%2C&z=20.27"
-                width="1200"
-                height="1000"
-                frameborder="1"
-                allowfullscreen="true"
-                style="position: relative"
-              ></iframe>
+              >
+                <a
+                  href="https://yandex.ru/maps/38/volgograd/?utm_medium=mapframe&utm_source=maps"
+                  style="
+                    color: #eee;
+                    font-size: 12px;
+                    position: absolute;
+                    top: 0px;
+                  "
+                  >Волгоград</a
+                ><a
+                  href="https://yandex.ru/maps/38/volgograd/house/pugachyovskaya_ulitsa_3/YE0YcwdoTUIAQFpifXp4d3VhZw==/?ll=44.508618%2C48.696803&utm_medium=mapframe&utm_source=maps&z=20.27"
+                  style="
+                    color: #eee;
+                    font-size: 12px;
+                    position: absolute;
+                    top: 14px;
+                  "
+                  >Пугачёвская улица, 3 — Яндекс Карты</a
+                ><iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=44.508618%2C48.696803&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzgyOTA5NxJG0KDQvtGB0YHQuNGPLCDQktC-0LvQs9C-0LPRgNCw0LQsINCf0YPQs9Cw0YfRkdCy0YHQutCw0Y8g0YPQu9C40YbQsCwgMyIKDa4IMkIVpslCQg%2C%2C&z=20.27"
+                  width="1200"
+                  height="1000"
+                  frameborder="1"
+                  allowfullscreen="true"
+                  style="position: relative"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div
+            class="certificates__block"
+            id="Certificates"
+            style="margin-top: 140px"
+          >
+            <h1 class="projects__block__heading">Важные документы.</h1>
+            <!-- <h2 class="projects__block__subtext">
+              Готовы ответить на все ваши вопросы.
+            </h2> -->
+            <div class="certificates__block__img_container">
+              <a
+                href="/docs/certificat_sootv.pdf"
+                style="text-decoration: none; color: black"
+                class="certificates__block__item"
+              >
+                <div>
+                  <p style="text-align: center">Сертификат соответствия</p>
+                </div>
+              </a>
+              <a
+                href="/docs/certificat_sootv_audit.pdf"
+                style="text-decoration: none; color: black"
+                class="certificates__block__item"
+              >
+                <div>
+                  <p style="text-align: center">
+                    Сертификат соответствия аудитора
+                  </p>
+                </div>
+              </a>
+              <a
+                href="/docs/razreshenye.pdf"
+                style="text-decoration: none; color: black"
+                class="certificates__block__item"
+              >
+                <div>
+                  <p style="text-align: center">
+                    Разрешение на применение знака соответствия системы
+                    сертификации "ОЛИМП"
+                  </p>
+                </div>
+              </a>
+              <a
+                href="/docs/znakolimp.jpg"
+                style="text-decoration: none; color: black"
+                class="certificates__block__item"
+              >
+                <div>
+                  <p style="text-align: center">Знак соответствия "ОЛИМП"</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="background"></div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__main container">
+            <img src="img/logo/iskra-m-white.svg" class="footer__logo" />
+            <div class="footer__label" style="margin-top: 10px">
+              ООО "Искра-М"
+            </div>
+            <div class="footer__label" style="margin-top: 15px">
+              Developed by Devirta.
             </div>
           </div>
         </div>
-        <div class="background"></div>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
