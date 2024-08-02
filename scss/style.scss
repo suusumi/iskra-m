@@ -323,7 +323,7 @@ body {
   }
 
   @media (max-width: 540px) {
-    margin-top: 80px;
+    margin-top: 120px;
   }
 
   &__square {
@@ -413,6 +413,19 @@ body {
       width: 70%;
     }
   }
+
+  @media (max-width: 900px) {
+    &__item {
+      font-size: 28px;
+      margin-top: 0px;
+      margin-bottom: 5px;
+    }
+
+    &__detail {
+      font-size: 28px;
+      margin-bottom: 0px;
+    }
+  }
 }
 
 .projects__block {
@@ -439,6 +452,14 @@ body {
 
   @media (max-width: 900px) {
     margin-top: 0px;
+
+    &__heading {
+      font-size: 32px !important;
+    }
+
+    &__subtext {
+      font-size: 32px;
+    }
   }
 
   &__img_container {
@@ -547,8 +568,9 @@ body {
     justify-content: center;
     background-color: #f3f3f5;
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
+    flex-direction: column;
 
     &:hover {
       background-color: #b6c6ff;

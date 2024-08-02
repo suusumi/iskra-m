@@ -536,8 +536,9 @@ body {
   justify-content: center;
   background-color: #f3f3f5;
   border-radius: 15px;
-  padding: 20px;
+  padding: 10px;
   cursor: pointer;
+  flex-direction: column;
 }
 .contacts__block__img_1:hover, .contacts__block__img_2:hover {
   background-color: #b6c6ff;
